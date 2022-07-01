@@ -1,69 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>STAT LAB</title>
-    <link>https://spontaneous-flan-886a42.netlify.app/</link>
-      <atom:link href="https://spontaneous-flan-886a42.netlify.app/index.xml" rel="self" type="application/rss+xml" />
-    <description>STAT LAB</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <title>Seminars | STAT LAB</title>
+    <link>https://spontaneous-flan-886a42.netlify.app/seminar/</link>
+      <atom:link href="https://spontaneous-flan-886a42.netlify.app/seminar/index.xml" rel="self" type="application/rss+xml" />
+    <description>Seminars</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
       <url>https://spontaneous-flan-886a42.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
-      <title>STAT LAB</title>
-      <link>https://spontaneous-flan-886a42.netlify.app/</link>
+      <title>Seminars</title>
+      <link>https://spontaneous-flan-886a42.netlify.app/seminar/</link>
     </image>
-    
-    <item>
-      <title>Seminar on Nonparametric Statistics</title>
-      <link>https://spontaneous-flan-886a42.netlify.app/event/nonparametric/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://spontaneous-flan-886a42.netlify.app/event/nonparametric/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Seminar on Optimization and Algorithm</title>
-      <link>https://spontaneous-flan-886a42.netlify.app/event/optimization/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://spontaneous-flan-886a42.netlify.app/event/optimization/</guid>
-      <description>&lt;p&gt;Materials are continuously updated on our &lt;a href=&#34;https://github.com/Everglow00/Optimization-and-Algorithms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github repository&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Seminar on Reinforcement Learning</title>
-      <link>https://spontaneous-flan-886a42.netlify.app/event/rl/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://spontaneous-flan-886a42.netlify.app/event/rl/</guid>
-      <description>&lt;h2 id=&#34;time&#34;&gt;Time&lt;/h2&gt;
-&lt;p&gt;9:30am-11:30am, Tuesday, 2022 Spring&lt;/p&gt;
-&lt;h2 id=&#34;materials&#34;&gt;Materials&lt;/h2&gt;
-&lt;p&gt;Materials are continuously updated on our &lt;a href=&#34;https://github.com/ljq1492/RL-AL_2022Spring&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github repository&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://spontaneous-flan-886a42.netlify.app/admin/config.yml</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://spontaneous-flan-886a42.netlify.app/admin/config.yml</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://spontaneous-flan-886a42.netlify.app/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://spontaneous-flan-886a42.netlify.app/contact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://spontaneous-flan-886a42.netlify.app/people/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://spontaneous-flan-886a42.netlify.app/people/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Seminar on Nonparametric Statistics</title>
@@ -105,14 +52,6 @@
 &lt;h2 id=&#34;materials&#34;&gt;Materials&lt;/h2&gt;
 &lt;p&gt;Materials are continuously updated on our &lt;a href=&#34;https://github.com/ljq1492/RL-AL_2022Spring&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github repository&lt;/a&gt;.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Tour</title>
-      <link>https://spontaneous-flan-886a42.netlify.app/tour/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://spontaneous-flan-886a42.netlify.app/tour/</guid>
-      <description></description>
     </item>
     
   </channel>
