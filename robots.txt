@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://spontaneous-flan-886a42.netlify.app/sitemap.xml
+Sitemap: https://statlab905.github.io/sitemap.xml
