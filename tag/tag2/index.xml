@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag2 | STAT LAB</title>
+    <link>https://statlab905.github.io/tag/tag2/</link>
+      <atom:link href="https://statlab905.github.io/tag/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <description>tag2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://statlab905.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>tag2</title>
+      <link>https://statlab905.github.io/tag/tag2/</link>
+    </image>
+    
+    <item>
+      <title>ABESS</title>
+      <link>https://statlab905.github.io/softwares/abess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://statlab905.github.io/softwares/abess/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
