@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Softwares | STAT LAB</title><link>https://statlab905.github.io/softwares/</link><atom:link href="https://statlab905.github.io/softwares/index.xml" rel="self" type="application/rss+xml"/><description>Softwares</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><image><url>https://statlab905.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url><title>Softwares</title><link>https://statlab905.github.io/softwares/</link></image><item><title>abess -- A Fast Best-Subset Selection Library in Python and R</title><link>https://statlab905.github.io/softwares/abess/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://statlab905.github.io/softwares/abess/</guid><description>&lt;a href="https://anaconda.org/conda-forge/abess">
+&lt;img src='https://anaconda.org/conda-forge/abess/badges/platforms.svg' align="left"/>&lt;/a>
+&lt;/a>
+&lt;a href="https://badge.fury.io/py/abess">
+&lt;img src='https://badge.fury.io/py/abess.svg' align="left"/>&lt;/a>
+&lt;/a>
+&lt;a href="https://anaconda.org/conda-forge/abess">
+&lt;img src='https://img.shields.io/conda/vn/conda-forge/abess.svg' align="left"/>&lt;/a>
+&lt;/a>
+&lt;a href="https://cran.r-project.org/package=abess">
+&lt;img src='https://img.shields.io/cran/v/abess?logo=R' align="left"/>&lt;/a>
+&lt;/a>
+&lt;a href="https://pepy.tech/project/abess">
+&lt;img src='https://pepy.tech/badge/abess' align="left"/>&lt;/a>
+&lt;/a>
+&lt;p>&lt;img src='https://raw.githubusercontent.com/abess-team/abess/master/docs/image/icon_long.png' align="center"/>&lt;/a>&lt;/p>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>&lt;code>abess&lt;/code> (Adaptive BEst Subset Selection) library aims to solve general best subset selection, i.e.,
+find a small subset of predictors such that the resulting model is expected to have the highest accuracy.
+The selection for best subset shows great value in scientific researches and practical applications.
+For example, clinicians want to know whether a patient is healthy or not based on the expression levels of a few of important genes.&lt;/p>
+&lt;p>This library implements a generic algorithm framework to find the optimal solution in an extremely fast way.
+This framework now supports the detection of best subset under:
+&lt;a href="https://abess.readthedocs.io/en/latest/auto_gallery/1-glm/plot_1_LinearRegression.html" target="_blank" rel="noopener">linear regression&lt;/a>,
+&lt;a href="https://abess.readthedocs.io/en/latest/auto_gallery/1-glm/plot_2_LogisticRegression.html" target="_blank" rel="noopener">classification (binary or multi-class)&lt;/a>,
+&lt;a href="https://abess.readthedocs.io/en/latest/auto_gallery/1-glm/plot_5_PossionGammaRegression.html" target="_blank" rel="noopener">counting-response modeling&lt;/a>,
+&lt;a href="https://abess.readthedocs.io/en/latest/auto_gallery/1-glm/plot_4_CoxRegression.html#sphx-glr-auto-gallery-1-glm-plot-4-coxregression-py" target="_blank" rel="noopener">censored-response modeling&lt;/a>,
+&lt;a href="https://abess.readthedocs.io/en/latest/auto_gallery/1-glm/plot_3_MultiTaskLearning.html" target="_blank" rel="noopener">multi-response modeling (multi-tasks learning)&lt;/a>, etc.
+It also supports the variants of best subset selection like
+&lt;a href="https://abess.readthedocs.io/en/latest/auto_gallery/3-advanced-features/plot_best_group.html" target="_blank" rel="noopener">group best subset selection&lt;/a>,
+&lt;a href="https://abess.readthedocs.io/en/latest/auto_gallery/3-advanced-features/plot_best_nuisance.html" target="_blank" rel="noopener">nuisance penalized regression&lt;/a>,
+Especially, the time complexity of (group) best subset selection for linear regression is certifiably polynomial.&lt;/p>
+&lt;h2 id="quick-start">Quick start&lt;/h2>
+&lt;p>The &lt;code>abess&lt;/code> software has both Python and R&amp;rsquo;s interfaces. Here a quick start will be given and for more details, please view: &lt;a href="https://abess.readthedocs.io/en/latest/Installation.html" target="_blank" rel="noopener">Installation&lt;/a>.&lt;/p>
+&lt;h3 id="python-package">Python package&lt;/h3>
+&lt;p>Install the stable version of Python-package from &lt;a href="https://pypi.org/project/abess/" target="_blank" rel="noopener">Pypi&lt;/a>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">$ pip install abess
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>or &lt;a href="https://anaconda.org/conda-forge/abess" target="_blank" rel="noopener">conda-forge&lt;/a>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">$ conda install abess
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Best subset selection for linear regression on a simulated dataset in Python:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">abess.linear&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">LinearRegression&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">abess.datasets&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">make_glm_data&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sim_dat&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">make_glm_data&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">300&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">p&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1000&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">k&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">family&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;gaussian&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">model&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">LinearRegression&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">model&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">fit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">sim_dat&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sim_dat&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">y&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>See more examples analyzed with Python in the &lt;a href="https://abess.readthedocs.io/en/latest/auto_gallery/index.html" target="_blank" rel="noopener">Python tutorials&lt;/a>.&lt;/p>
+&lt;h3 id="r-package">R package&lt;/h3>
+&lt;p>Install the stable version of R-package from &lt;a href="https://cran.r-project.org/web/packages/abess" target="_blank" rel="noopener">CRAN&lt;/a> with:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-r" data-lang="r">&lt;span class="line">&lt;span class="cl">&lt;span class="nf">install.packages&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;abess&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Best subset selection for linear regression on a simulated dataset in R:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-r" data-lang="r">&lt;span class="line">&lt;span class="cl">&lt;span class="nf">library&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">abess&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sim_dat&lt;/span> &lt;span class="o">&amp;lt;-&lt;/span> &lt;span class="nf">generate.data&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="m">300&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">p&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="m">1000&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nf">abess&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">sim_dat[[&lt;/span>&lt;span class="s">&amp;#34;x&amp;#34;&lt;/span>&lt;span class="n">]]&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">sim_dat[[&lt;/span>&lt;span class="s">&amp;#34;y&amp;#34;&lt;/span>&lt;span class="n">]]&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>See more examples analyzed with R in the &lt;a href="https://abess-team.github.io/abess/articles/" target="_blank" rel="noopener">R tutorials&lt;/a>.&lt;/p>
+&lt;h2 id="runtime-performance">Runtime Performance&lt;/h2>
+&lt;p>To show the power of abess in computation, we assess its timings of the CPU execution (seconds) on synthetic datasets, and compare to state-of-the-art variable selection methods. The variable selection and estimation results are deferred to &lt;a href="https://abess.readthedocs.io/en/latest/auto_gallery/1-glm/plot_a1_power_of_abess.html" target="_blank" rel="noopener">Python performance&lt;/a> and &lt;a href="https://abess-team.github.io/abess/articles/v11-power-of-abess.html" target="_blank" rel="noopener">R performance&lt;/a>. All computations are conducted on a Ubuntu platform with Intel(R) Core(TM) i9-9940X CPU @ 3.30GHz and 48 RAM.&lt;/p>
+&lt;h3 id="python-package-1">Python package&lt;/h3>
+&lt;p>We compare &lt;code>abess&lt;/code> Python package with &lt;code>scikit-learn&lt;/code> on linear regression and logistic regression. Results are presented in the below figure:&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/softwares/abess/timings_hufa34008d660dc2da4616bf0df2f4e6a6_18148_31d060037dda3cd81216ccee5ca23e00.webp 400w,
+/softwares/abess/timings_hufa34008d660dc2da4616bf0df2f4e6a6_18148_100034ebcb39ade4cf79b48dbfe18e30.webp 760w,
+/softwares/abess/timings_hufa34008d660dc2da4616bf0df2f4e6a6_18148_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://statlab905.github.io/softwares/abess/timings_hufa34008d660dc2da4616bf0df2f4e6a6_18148_31d060037dda3cd81216ccee5ca23e00.webp"
+width="760"
+height="326"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>It can be see that &lt;code>abess&lt;/code> uses the least runtime to find the solution.&lt;/p>
+&lt;h3 id="r-package-1">R package&lt;/h3>
+&lt;p>We compare &lt;code>abess&lt;/code> R package with three widely used R packages: &lt;code>glmnet&lt;/code>, &lt;code>ncvreg&lt;/code>, and &lt;code>L0Learn&lt;/code>.
+We get the runtime comparison results:&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/softwares/abess/r_runtime_hu2b29aa87e6659e8df2f59d10e1664348_62285_32bb9ed4c0c7e521f9a39deb939f1aed.webp 400w,
+/softwares/abess/r_runtime_hu2b29aa87e6659e8df2f59d10e1664348_62285_93d8e29098844ac79d9a27a9b8be8100.webp 760w,
+/softwares/abess/r_runtime_hu2b29aa87e6659e8df2f59d10e1664348_62285_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://statlab905.github.io/softwares/abess/r_runtime_hu2b29aa87e6659e8df2f59d10e1664348_62285_32bb9ed4c0c7e521f9a39deb939f1aed.webp"
+width="760"
+height="276"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Compared with other packages,
+&lt;code>abess&lt;/code> shows competitive computational efficiency,
+and achieves the best computational power when variables have a large correlation.&lt;/p>
+&lt;h2 id="open-source-software">Open source software&lt;/h2>
+&lt;p>&lt;code>abess&lt;/code> is a free software and its source code is publicly available on &lt;a href="https://github.com/abess-team/abess" target="_blank" rel="noopener">Github&lt;/a>. The core framework is programmed in C++, and user-friendly R and Python interfaces are offered. You can redistribute it and/or modify it under the terms of the &lt;a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">GPL-v3 License&lt;/a>. We welcome contributions for &lt;code>abess&lt;/code>, especially stretching &lt;code>abess&lt;/code> to the other best subset selection problems.&lt;/p>
+&lt;h2 id="whats-news">What&amp;rsquo;s news&lt;/h2>
+&lt;p>New features:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>abess&lt;/code> Python package can be installed via &lt;code>conda&lt;/code>.&lt;/li>
+&lt;li>&lt;code>abess&lt;/code> R package is is highlighted as one of the core packages in &lt;a href="https://cran.r-project.org/web/views/MachineLearning.html" target="_blank" rel="noopener">CRAN Task View: Machine Learning &amp;amp; Statistical Learning&lt;/a>.&lt;/li>
+&lt;li>On Windows, the recommended C++ compiler shifts from Mingw to Microsoft Visual Studio.&lt;/li>
+&lt;li>Support predicting survival function in &lt;code>abess.linear.CoxPHSurvivalAnalysis&lt;/code>.&lt;/li>
+&lt;li>Rename estimators in Python. Please check &lt;a href="https://abess.readthedocs.io/en/latest/Python-package/index.html" target="_blank" rel="noopener">here&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>New best subset selection tasks:&lt;/p>
+&lt;ul>
+&lt;li>Generalized linear model for ordinal regression (a.k.a rank learning in some machine learning literature).&lt;/li>
+&lt;/ul>
+&lt;h2 id="citation">Citation&lt;/h2>
+&lt;p>If you use &lt;code>abess&lt;/code> or reference our tutorials in a presentation or publication, we would appreciate citations of our library.&lt;/p>
+&lt;blockquote>
+&lt;p>Jin Zhu, Xueqin Wang, Liyuan Hu, Junhao Huang, Kangkang Jiang, Yanhang Zhang, Shiyun Lin, Junxian Zhu (2022). “abess: A Fast Best Subset Selection Library in Python and R.” Journal of Machine Learning Research (Accepted).&lt;/p>
+&lt;/blockquote>
+&lt;p>The corresponding BibteX entry:&lt;/p>
+&lt;pre tabindex="0">&lt;code>@article{zhu2022abess,
+author = {Jin Zhu and Xueqin Wang and Liyuan Hu and Junhao Huang and Kangkang Jiang and Yanhang Zhang and Shiyun Lin and Junxian Zhu},
+title = {abess: A Fast Best Subset Selection Library in Python and R},
+journal = {Journal of Machine Learning Research (Accepted)},
+year = {2022}
+}
+&lt;/code>&lt;/pre>&lt;h2 id="references">References&lt;/h2>
+&lt;ul>
+&lt;li>Junxian Zhu, Canhong Wen, Jin Zhu, Heping Zhang, and Xueqin Wang (2020). A polynomial algorithm for best-subset selection problem. Proceedings of the National Academy of Sciences, 117(52):33117-33123.&lt;/li>
+&lt;li>Pölsterl, S (2020). scikit-survival: A Library for Time-to-Event Analysis Built on Top of scikit-learn. J. Mach. Learn. Res., 21(212), 1-6.&lt;/li>
+&lt;li>Yanhang Zhang, Junxian Zhu, Jin Zhu, and Xueqin Wang (2021). Certifiably Polynomial Algorithm for Best Group Subset Selection. arXiv preprint arXiv:2104.12576.&lt;/li>
+&lt;li>Qiang Sun and Heping Zhang (2020). Targeted Inference Involving High-Dimensional Data Using Nuisance Penalized Regression, Journal of the American Statistical Association, DOI: 10.1080/01621459.2020.1737079.&lt;/li>
+&lt;li>Jin Zhu, Xueqin Wang, Liyuan Hu, Junhao Huang, Kangkang Jiang, Yanhang Zhang, Shiyun Lin, Junxian Zhu (2022). abess: A Fast Best Subset Selection Library in Python and R. Journal of Machine Learning Research (Accepted).&lt;/li>
+&lt;/ul></description></item></channel></rss>
