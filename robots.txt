@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://statlab905.github.io/sitemap.xml

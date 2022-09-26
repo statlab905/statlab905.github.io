@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/statlab905/statlab905.github.io.git
+	branch = main
