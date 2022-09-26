@@ -1,1 +1,1 @@
-https://spontaneous-flan-886a42.netlify.app/
+https://statlab905.github.io/
