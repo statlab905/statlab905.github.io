@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position (e.g., Professor of Artificial Intelligence)
-role:
+role: Phd of Statistics
 
 # Organizations/Affiliations
 organizations:
@@ -18,21 +18,26 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio: My research interests include statistical learning, non-Euclidean data analysis, applied machine learning and statistical software.
 
 # List each interest with a dash
 interests:
-- Interest 1
-- Interest 2
+- Statistical Machine Learning
+- Non-Euclidean Data Analysis
+- Applied Machine Learning
+- Statistical Software
 
 education:
   courses:
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
+  - course: PhD in Statistics
+    institution: Sun Yat-Sen University
+    year: 2023 (Expected)
+  - course: MS in Statistics
+    institution: Sun Yat-Sen University
+    year: 2019
+  - course: BS in Statistics
+    institution: Sun Yat-Sen University
+    year: 2016
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/page-builder/#icons
@@ -41,16 +46,16 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:zhuj37@mail2.sysu.edu.cn'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/USERNAME
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.com/citations?user=PERSON-ID
+  link: https://scholar.google.com/citations?user=V84kQ3UAAAAJ&hl=en
 - icon: github
   icon_pack: fab
-  link: https://github.com/USERNAME
+  link: https://github.com/Mamba413
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -58,7 +63,7 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+email: "zhuj37@mail2.sysu.edu.cn"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
@@ -68,3 +73,5 @@ highlight_name: false
 user_groups:
 - Doctoral Students
 ---
+
+I'm a Ph.D. candidate working with Prof. [Xueqin Wang](https://bs.ustc.edu.cn/english/profile-650.html) in the School of Mathematics, SYSU since 2019. I am interested in developing computationally efficient algorithms & softwares with statistical performance guarantees for large scale non-Euclidean/high-dimensional data analysis. 
