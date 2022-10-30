@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position (e.g., Professor of Artificial Intelligence)
-role: Ph.D. of Statistics
+role: Phd of Statistics
 
 # Organizations/Affiliations
 organizations:
