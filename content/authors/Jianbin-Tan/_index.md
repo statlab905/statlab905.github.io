@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position (e.g., Professor of Artificial Intelligence)
-role: Phd of Statistics
+role: Ph.D. of Statistics
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio:  I’m a Ph.D. candidate working with Prof. Hui Huang in the School of Mathematics, SYSU, since 2019, and also a visiting student working with Prof. Xueqin Wang in the School of Management, USTC, from 2021 to 2022. I'm interested in statistical modeling and inference of trajectory data, such as dynamic data, functional data, or count data from dependent processes in various fields (e.g., physics, biology, social networks, and so on). I prefer the (empirical) Bayesian paradigm for encoding the mysteries among trajectories, thereby promoting scientific discovery and insightful understanding of different fields.
+bio:  I’m a Ph.D. candidate working with Prof. Hui Huang in the School of Mathematics, SYSU, since 2019, and also a visiting student working with Prof. Xueqin Wang in the School of Management, USTC, from 2021 to 2022. I'm currently interested in statistical modeling and inference of trajectory data, such as dynamic data or functional data from dependent processes in physics, biology, social networks, and so on. I prefer the empirical Bayesian paradigm for encoding the mysteries among trajectories, thereby promoting scientific discovery and insightful understanding in different domains.
 
 # List each interest with a dash
 interests:
@@ -67,4 +67,4 @@ user_groups:
 - Visiting Scholars
 ---
 
-I’m a Ph.D. candidate working with Prof. Hui Huang in the School of Mathematics, SYSU, since 2019, and also a visiting student working with Prof. Xueqin Wang in the School of Management, USTC, from 2021 to 2022. I'm interested in statistical modeling and inference of trajectory data, such as dynamic data, functional data, or count data from dependent processes in various fields (e.g., physics, biology, social networks, and so on). I prefer the (empirical) Bayesian paradigm for encoding the mysteries among trajectories, thereby promoting scientific discovery and insightful understanding of different fields.
+I’m a Ph.D. candidate working with Prof. Hui Huang in the School of Mathematics, SYSU, since 2019, and also a visiting student working with Prof. Xueqin Wang in the School of Management, USTC, from 2021 to 2022. I'm currently interested in statistical modeling and inference of trajectory data, such as dynamic data or functional data from dependent processes in physics, biology, social networks, and so on. I prefer the empirical Bayesian paradigm for encoding the mysteries among trajectories, thereby promoting scientific discovery and insightful understanding in different domains.
