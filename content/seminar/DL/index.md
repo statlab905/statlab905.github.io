@@ -3,7 +3,7 @@ title: Seminar on Deep Learning
 
 publishDate: '2025-02-21T00:00:00Z'
 
-summary: We systematically introduces deep learning fundamentals, core architectures (CNNs), applications in NLP and computer vision, reinforcement learning, and specialized domains like medical imaging and non-Euclidean data analysis.
+summary: We systematically introduces deep learning fundamentals.
 
 ---
 
