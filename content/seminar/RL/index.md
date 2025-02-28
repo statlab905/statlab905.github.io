@@ -18,5 +18,5 @@ Our seminar mainly focuses on the book "Reinforcement Learning :An Introduction"
 
 ## Materials
 
-Materials are continuously updated on our [Github repository](https://github.com/ljq1492/RL-AL_2022Spring).
+The materials are stored in Baidu Cloud Drive: [PPT](https://pan.baidu.com/s/13s5xRZo4Tt-SFNEYMLrh-Q?pwd=9qkj).
 

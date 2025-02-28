@@ -1,7 +1,7 @@
 ---
 title: Seminar on Deep Learning
 
-publishDate: '2025-02-21T00:00:00Z'
+publishDate: '2022-07-01T00:00:00Z'
 
 summary: We systematically introduces deep learning fundamentals.
 
@@ -17,4 +17,4 @@ Our seminar progresses from foundational concepts and text analysis to convoluti
 
 ## Resources
 
-Our materials are stored in Baidu Cloud Drive: [Video materials](https://pan.baidu.com/s/17Jftvugz9By73c_xegzW1Q?pwd=kj8u), [PPT](https://pan.baidu.com/s/1DsNrDT1ji7LdG2OpLEw_Jg?pwd=qpu6)
+Our materials are stored in Baidu Cloud Drive: [Video materials](https://pan.baidu.com/s/17Jftvugz9By73c_xegzW1Q?pwd=kj8u), [PPT](https://pan.baidu.com/s/1DsNrDT1ji7LdG2OpLEw_Jg?pwd=qpu6).

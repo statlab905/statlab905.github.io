@@ -18,5 +18,5 @@ Location: USTC Management Science Building 1008 and Online
 
 ## Learning Materials
 
-Materials are continuously updated on our [Github repository](https://github.com/Everglow00/Optimization-and-Algorithms).
+The materials are stored in Baidu Cloud Drive: [PPT](https://pan.baidu.com/s/17Dq-gcn_ZsZ_XJ1_xWLmtQ?pwd=k5hy).
 

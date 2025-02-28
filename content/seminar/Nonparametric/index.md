@@ -15,3 +15,7 @@ Our seminar consists two parts. In the first part, we cover selected topics in "
 Time: 7:00pm-9:00pm, Tuesday, 2022 Spring
 
 Location: USTC Management Science Building 1008 and Online
+
+## Resources
+
+The materials are stored in Baidu Cloud Drive: [PPT](https://pan.baidu.com/s/1kwX_9ccrDjvfWM4Rmrzw-Q?pwd=rw8v).
