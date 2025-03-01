@@ -17,4 +17,4 @@ This seminar offers a comprehensive exploration of statistical computing using P
 
 ## Learning Materials
 
-The materials are stored in Baidu Cloud Drive: [Tutorial](https://pan.baidu.com/s/17Dq-gcn_ZsZ_XJ1_xWLmtQ?pwd=k5hy), [Video materials](https://pan.baidu.com/s/1maBVF7PzLIj80ipSJRFftA?pwd=3w6u).
+The materials are stored in Baidu Cloud Drive: [Tutorial](https://pan.baidu.com/s/1MgDt-kpnB0BS28De7N8itg?pwd=4i5c), [Video materials](https://pan.baidu.com/s/1maBVF7PzLIj80ipSJRFftA?pwd=3w6u).
