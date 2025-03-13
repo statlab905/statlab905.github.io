@@ -64,7 +64,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- Visiting Scholars
+- Alumni
 ---
 
 I’m a Ph.D. candidate working with Prof. Hui Huang in the School of Mathematics, SYSU, since 2019, and also a visiting student working with Prof. Xueqin Wang in the School of Management, USTC, from 2021 to 2022. I'm currently interested in statistical modeling and inference of trajectory data, such as dynamic data or functional data from dependent processes in physics, biology, social networks, and so on. I prefer the empirical Bayesian paradigm for encoding the mysteries among trajectories, thereby promoting scientific discovery and insightful understanding in different domains.

@@ -71,7 +71,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- Doctoral Students
+- Alumni
 ---
 
 I'm a Ph.D. candidate working with Prof. [Xueqin Wang](https://bs.ustc.edu.cn/english/profile-650.html) in the School of Mathematics, SYSU since 2019. I am interested in developing computationally efficient algorithms & softwares with statistical performance guarantees for large scale non-Euclidean/high-dimensional data analysis. 
