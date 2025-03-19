@@ -1,5 +1,5 @@
 ---
-title: "Enhancing Retinal Fundus Image Quality Assessment With Swin-Transformer–Based Learning Across Multiple Color-Spaces"
+title: "Enhancing Retinal Fundus Image Quality Assessment With Swin-Transformer--Based Learning Across Multiple Color-Spaces"
 authors:
 - Chengcheng Huang
 - yukang-jiang
